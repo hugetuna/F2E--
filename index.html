@@ -6,18 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <div class="all">
-        <header class="header">
-            <h1 class="h1 header-h1">遊戲名稱</h1>
+        <header id="header" class="header">
+            <h1 class="h1 header-h1"><a class="nav-a" href=" index.html">遊戲名稱</a></h1>
             <nav class="nav">
-                <ul class="nav-ul">
+                <ul id="nav-list" class="nav-ul">
+                    <li class="nav-li">
+                        <a class="nav-a" href=" index.html">
+                            <h2 class="h2">遊戲簡介</h2>
+                        </a>
+                        <ul class="nav-ul-l2">
+                            <li class="nav-li-l2">
+                                <a class="nav-a" href="index.html #story">
+                                    <h2 class="h2">故事大綱</h2>
+                                </a>
+                            </li>
+                            <li class="nav-li-l2">
+                                <a class="nav-a" href="index.html #intro">
+                                    <h2 class="h2">遊戲特色</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="nav-li">
                         <a class="nav-a" href="how-to-play.html">
                             <h2 class="h2">玩法介紹</h2>
+                            <ul class="nav-ul-l2">
+                                <li class="nav-li-l2">
+                                    <a class="nav-a" href="how-to-play.html">
+                                        <h2 class="h2">操作系統</h2>
+                                    </a>
+                                </li>
+                                <li class="nav-li-l2">
+                                    <a class="nav-a" href="how-to-play.html">
+                                        <h2 class="h2">戰鬥系統</h2>
+                                    </a>
+                                </li>
+                                <li class="nav-li-l2">
+                                    <a class="nav-a" href="how-to-play.html">
+                                        <h2 class="h2">道具系統</h2>
+                                    </a>
+                                </li>
+                            </ul>
                         </a>
                     </li>
                     <li class="nav-li">
@@ -26,19 +62,26 @@
                         </a>
                     </li>
                     <li class="nav-li">
-                        <a class="nav-a" href="">
+                        <a class="nav-a"
+                            href="https://www.kickstarter.com/projects/edc-power-bank/shargeek-170-the-coolest-powerbank-unparalleled-charging?ref=aprpcn&gclid=Cj0KCQjw4vKpBhCZARIsAOKHoWSspUwpz3Or9OL8bWAMnh6k1y7UH14tzJvTr6DQvY-AxBaCvmrxfykaAkYkEALw_wcB"
+                            target="_blank">
                             <h2 class="h2">支持我們</h2>
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <img class="main" src="" alt="">
-        <article class="story">
+        <div id="main-pic" class="main-pic">
+            <img class="main" src="img/test用.png" alt="大圖">
+        </div>
+        <article id="story" class="story">
             <h2 class="h2 story-h2">STORY</h2>
             <p class="p story-p">
+                遙遠的國度中，流傳著這樣的故事<br>
                 被遺棄的事物當中，蘊含著強烈的情感<br>
-                若擱置不管，再經年累月的累積下，將被無主靈所寄宿，衝擊現實世界。
+                若擱置不管<br>
+                將被無主靈所寄宿<br>
+                衝擊現世
             </p>
             <div class="line"></div>
             <p class="p story-p">
@@ -47,32 +90,40 @@
                 2023年，突如其然的無主靈增生席捲了拾物員艾亞與柴落地區的日常…….
             </p>
         </article>
-        <article class="intro">
-            <div class="intro-box1">
-                <img src="" alt="">
-                <h2 class="h2">強烈的情感不只是生命能量，也是戰鬥的手段</h2>
-                <p class="p">
-                    善用寄宿於遺失物中的情感，擊碎無主靈吧!即使是常見的橡皮擦、硬
-                    幣、橡皮筋，透過小精靈的技術都能成為強大的武器!
-                </p>
+        <article id="intro" class="intro">
+            <div class="intro-box">
+                <div class="intro-img"><img src="img/test用.png" alt="介紹"></div>
+                <div class="intro-p">
+                    <h2 class="h2">強烈的情感不只是生命能量，也是戰鬥的手段</h2>
+                    <div class="small-line"></div>
+                    <p class="p">
+                        善用寄宿於遺失物中的情感，擊碎無主靈吧!即使是常見的橡皮擦、硬
+                        幣、橡皮筋，透過小精靈的技術都能成為強大的武器!
+                    </p>
+                </div>
             </div>
-            <div class="line"></div>
-            <div class="intro-box2">
-                <img src="" alt="">
-                <h2 class="h2">探索微觀的現代社會，體驗一場獨特的冒險</h2>
-                <p class="p">
-                    跟著艾亞一起前往柴落地區的各處，平時習以為
-                    常的，學校、商店街、百貨公司，在小精靈視野中，迸發嶄新的風情。
-                </p>
+            <div class="intro-box">
+                <div class="intro-img last"><img src="img/test用.png" alt="介紹"></div>
+                <div class="intro-p">
+                    <h2 class="h2">探索微觀的現代社會，體驗一場獨特的冒險</h2>
+                    <div class="small-line"></div>
+                    <p class="p">
+                        跟著艾亞一起前往柴落地區的各處，平時習以為
+                        常的，學校、商店街、百貨公司，在小精靈視野中，迸發嶄新的風情。
+                    </p>
+                </div>
             </div>
-            <div class="line"></div>
-            <div class="intro-box3">
-                <img src="" alt="">
-                <h2 class="h2">結識夥伴，找尋藏於異常背後的真相</h2>
-                <p class="p">
-                    上級拾物員、科技部技師、流浪醫者，增生異常受到了精靈們的廣泛關注，拾物員的工作絕不安全，
-                    與他們攜手並進，跨越重重難關吧!
-                </p>
+
+            <div class="intro-box">
+                <div class="intro-img"><img src="img/test用.png" alt="介紹"></div>
+                <div class="intro-p">
+                    <h2 class="h2">結識夥伴，找尋藏於異常背後的真相</h2>
+                    <div class="small-line"></div>
+                    <p class="p">
+                        上級拾物員、科技部技師、流浪醫者，增生異常受到了精靈們的廣泛關注，拾物員的工作絕不安全，
+                        與他們攜手並進，跨越重重難關吧!
+                    </p>
+                </div>
             </div>
         </article>
         <footer class="footer">
@@ -84,8 +135,7 @@
             </div>
         </footer>
     </div>
-    <script src="js/js.js"></script>
-    <script src="js/jquery-3.7.1.slim.min.js"></script>
+    <a class="to-top" href="#header"><img src="img/Arrow circle up.png" alt="to the top"></a>
 </body>
 
 </html>
