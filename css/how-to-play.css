@@ -7,6 +7,16 @@ html {
 
 }
 
+body {
+    background-position: center;
+    background-color: rgba(21, 21, 21, 0.6);
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /*字形設定*/
 .h1 {
     font-size: 2.4rem;
@@ -111,6 +121,111 @@ html {
 .nav-a {
     color: #fff29e;
     text-decoration: none;
+}
+
+/*大圖*/
+.main-pic {
+    width: 1440px;
+    height: 450px;
+    overflow: hidden;
+}
+
+/*切換按鈕的調整*/
+.switch-but {
+    position: absolute;
+}
+
+/*主頁的調整*/
+.Sys-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 3200px;
+    background-color: #322405;
+}
+
+/*主頁-統一調整*/
+.opSys,
+.batSys,
+.itemSys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 1044px;
+    height: 1000px;
+    /*背景*/
+    background-image: url(../img/—Pngtree—paper\ folds\ texture\ background_1465971.png);
+    background-color: #fff29ec7;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    /*影子*/
+    box-shadow: 10px 10px 20px 10px rgba(6, 5, 5, 0.788);
+}
+
+.opSys-h2,
+.batSys-h2,
+.itemSys-h2 {
+    width: 864px;
+    height: 370px;
+    text-align: center;
+}
+
+/*操作系統*/
+.opSys-aside {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 509px;
+    height: 302px;
+}
+
+.opSys-aside h2 {
+    width: 200px;
+    height: 74px;
+    text-align: center;
+}
+
+.opSys-aside p {
+    width: 333px;
+    height: 157px;
+    text-align: center;
+}
+
+.artical-picbox {
+    width: 157px;
+    height: 157px;
+    overflow: hidden;
+}
+
+/*戰鬥系統*/
+
+
+/*道具系統*/
+
+
+
+.itemSys-aside {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 509px;
+    height: 302px;
+}
+
+.itemSys-aside h2 {
+    width: 200px;
+    height: 74px;
+    text-align: center;
+}
+
+.itemSys-aside p {
+    width: 333px;
+    height: 157px;
+    text-align: center;
 }
 
 /*footer的調整*/
