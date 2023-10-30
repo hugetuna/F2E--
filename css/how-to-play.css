@@ -1,6 +1,7 @@
 html {
     width: 100%;
-    height: 3090px;
+    height: 2000px;
+    min-height: 1000px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     box-sizing: border-box;
@@ -8,6 +9,10 @@ html {
 }
 
 body {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
     background-position: center;
     background-color: rgba(21, 21, 21, 0.6);
     background-image: url(../img/background.jpg);
@@ -125,14 +130,56 @@ body {
 
 /*大圖*/
 .main-pic {
+    position: relative;
+    z-index: -999;
     width: 1440px;
     height: 450px;
     overflow: hidden;
 }
 
 /*切換按鈕的調整*/
-.switch-but {
+
+.switch-but-opSys {
     position: absolute;
+    left: -2px;
+    z-index: 3;
+}
+
+.switch-but-batSys {
+    position: absolute;
+    left: 12%;
+    z-index: 2;
+}
+
+.switch-but-itemSys {
+    position: absolute;
+    left: 24%;
+    z-index: 1;
+}
+
+.pickup {
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    top: -50px;
+    background-color: #fed843;
+    border-radius: 20% 20% 0 0;
+    border: 2px solid #1f1004e0;
+    border-bottom: 0;
+    z-index: 999;
+}
+
+.notpickup {
+    width: 180px;
+    height: 40px;
+    color: #fff29e;
+    text-align: center;
+    top: -40px;
+    background-color: #784c25;
+    border-radius: 20% 20% 0 0;
+    border: 2px solid #1f1004e0;
+    border-bottom: 0;
+
 }
 
 /*主頁的調整*/
@@ -142,9 +189,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 80%;
-    height: 3200px;
-    background-color: #322405;
+    width: 75%;
+    min-width: 1000px;
+    height: 1100px;
+    background-image: linear-gradient(150deg, #fed843 20%, #fff29e, #fed843 80%);
+    border: 2px solid #1f1004e0;
+    border-top: 0;
 }
 
 /*主頁-統一調整*/
@@ -164,6 +214,7 @@ body {
     background-attachment: fixed;
     /*影子*/
     box-shadow: 10px 10px 20px 10px rgba(6, 5, 5, 0.788);
+    z-index: 2;
 }
 
 .opSys-h2,
@@ -187,6 +238,7 @@ body {
     width: 200px;
     height: 74px;
     text-align: center;
+    font-style: italic;
 }
 
 .opSys-aside p {
@@ -220,6 +272,7 @@ body {
     width: 200px;
     height: 74px;
     text-align: center;
+    font-style: italic;
 }
 
 .itemSys-aside p {

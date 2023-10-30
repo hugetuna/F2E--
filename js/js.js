@@ -9,6 +9,7 @@ $(document).ready(function () {
         }
     );
 
+
     $(window).scroll(
         function () {
             var scroll = $(window).scrollTop(); // 取得滾動條位置
