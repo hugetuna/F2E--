@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     $(window).scroll(
         function () {
-            var scroll = $(window).scrollTop(); // 取得滾動條位置
+            let scroll = $(window).scrollTop(); // 取得滾動條位置
             if (scroll > 1000) {
                 $('.intro-img').children('#img1').fadeIn(500);
             }

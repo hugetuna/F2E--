@@ -9,6 +9,11 @@ const opSys =
         <div id="but-itemSys" class="switch-but-itemSys notpickup">
             <h2 class="h2">道具系統</h2>
         </div>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=_mhksJ_6xddxjPU9" target="_blank">
+            <div id="but-speSys" class="switch-but-speSys  notpickup">
+                <h2 class="h2">特殊要素</h2>
+            </div>
+        </a>
         <article id="opSys" class="opSys">
             <h2 class="h2 opSys-h2">
                 類銀河戰士惡魔城的精隨之一<br>
@@ -33,6 +38,7 @@ const opSys =
                 </p>
                 <div class="artical-picbox"><img src="img/Knot-a-Leash.jpg" alt="rope"></div>
             </aside>
+            <h2 class="h2">還有更多等待著你發覺。</h2>
 `
 const batSys =
     `
@@ -45,6 +51,11 @@ const batSys =
         <div id="but-itemSys" class="switch-but-itemSys notpickup">
             <h2 class="h2">道具系統</h2>
         </div>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=_mhksJ_6xddxjPU9" target="_blank">
+            <div id="but-speSys" class="switch-but-speSys  notpickup">
+                <h2 class="h2">特殊要素</h2>
+            </div>
+        </a>
         <article id="batSys" class="batSys">
             <h2 class="h2 batSys-h2">
             無主靈由情感構成，必須使用蘊藏情感的物件打擊才能消滅他們<br>
@@ -64,6 +75,11 @@ const itemSys =
         <div id="but-itemSys" class="switch-but-itemSys pickup">
             <h2 class="h2">道具系統</h2>
         </div>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=_mhksJ_6xddxjPU9" target="_blank">
+            <div id="but-speSys" class="switch-but-speSys  notpickup">
+                <h2 class="h2">特殊要素</h2>
+            </div>
+        </a>
         <article id="itemSys" class="itemSys">
             <h2 class="h2 itemSys-h2">
                 拾物員透過富情感的道具武裝自身<br>

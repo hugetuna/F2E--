@@ -1,6 +1,6 @@
 html {
     width: 100%;
-    height: 2000px;
+
     min-height: 1000px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -9,17 +9,23 @@ html {
 }
 
 body {
-    position: relative;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    background-position: center;
+
     background-color: rgba(21, 21, 21, 0.6);
+    background-position: center;
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    width: 100%;
+
 }
 
 /*字形設定*/
@@ -48,7 +54,7 @@ body {
 .header {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 150px;
     background-color: #784c25;
     color: #fff29e;
 }
@@ -63,7 +69,7 @@ body {
 
 .nav {
     position: absolute;
-    top: 140px;
+    top: 90px;
     left: 200px;
     width: 679px;
     height: 60px;
@@ -142,18 +148,24 @@ body {
 .switch-but-opSys {
     position: absolute;
     left: -2px;
-    z-index: 3;
+    z-index: 4;
 }
 
 .switch-but-batSys {
     position: absolute;
     left: 12%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .switch-but-itemSys {
     position: absolute;
     left: 24%;
+    z-index: 2;
+}
+
+.switch-but-speSys {
+    position: absolute;
+    left: 36%;
     z-index: 1;
 }
 
@@ -172,14 +184,13 @@ body {
 .notpickup {
     width: 180px;
     height: 40px;
-    color: #fff29e;
     text-align: center;
     top: -40px;
-    background-color: #784c25;
+    background-color: #caae41;
     border-radius: 20% 20% 0 0;
     border: 2px solid #1f1004e0;
     border-bottom: 0;
-
+    color: black;
 }
 
 /*主頁的調整*/
@@ -313,4 +324,8 @@ body {
     align-items: center;
     width: 550px;
     color: #fff29e;
+}
+
+.fa-brands {
+    font-size: 3.5rem;
 }
